@@ -226,7 +226,7 @@ interface NavbarProps {
   changeSortFilter: (e: React.ChangeEvent<HTMLSelectElement>) => void
 }
 
-export const Navbar = ({ handleSearch, changeGenreFilter, changeSortFilter }: NavbarProps) => {
+const Navbar = ({ handleSearch, changeGenreFilter, changeSortFilter }: NavbarProps) => {
   const [showFilter, setShowFilter] = useState(false);
 
   const toggleFilters = () => {
