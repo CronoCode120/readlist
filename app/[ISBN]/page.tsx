@@ -17,7 +17,7 @@ export async function generateStaticParams() {
   ));
 }
 
-export function getBook(isbn: string) {
+function getBook(isbn: string) {
   const book = booksData.library.find((item: { book: Book }) => item.book.ISBN === isbn);
 
   if (typeof book !== 'undefined') return book.book;
