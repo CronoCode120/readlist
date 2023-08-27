@@ -1,0 +1,11 @@
+{
+  "extends": ["standard", "eslint:recommended", "plugin:@typescript-eslint/recommended", "next/core-web-vitals"],
+  "plugins": ["@typescript-eslint"],
+  "root": true,
+  "rules": {
+    "semi": "off",
+    "space-before-function-paren": ["error", "never"],
+    "react-hooks/exhaustive-deps": "off",
+    "eqeqeq": "off"
+  }
+}
